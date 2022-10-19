@@ -1,10 +1,20 @@
 *{
-    border:1px solid black;
+    border:1px solid rgb(214, 138, 138);
+    padding:5px 0;
+}
+
+
+#control{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
 }
 
 #control .col>*{
     background-color: antiquewhite;
     height: 100vh;
+    
 }
 
 #control,
@@ -12,3 +22,4 @@
     border: bisque;
     /* display: none; */
 }
+
