@@ -1,0 +1,14 @@
+*{
+    border:1px solid black;
+}
+
+#control .col>*{
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+#control,
+#control * {
+    border: bisque;
+    /* display: none; */
+}
