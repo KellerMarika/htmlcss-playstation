@@ -131,6 +131,9 @@ nav a:hover {
 .my_nav_card:hover{
     box-shadow: 1px 2px 10px 2px rgb(201, 201, 201);
 }
+.drop-li{
+    box-shadow: 0 2px 3px 1px rgb(201, 201, 201) ;
+}
 
 .drop-li li::before{
     content: "";
@@ -139,10 +142,6 @@ nav a:hover {
     background-color: var(--_primary-light);
     aspect-ratio: 1/1;
     width: 10px;
-    
-
-
-
 }    
 
 
