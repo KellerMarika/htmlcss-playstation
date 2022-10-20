@@ -1,8 +1,7 @@
 
 /*********STUDIO ****************/
-* {
-  /*   border: 1px solid rgb(214, 138, 138); */
-}
+ *{
+     border: 1px solid rgb(214, 138, 138);} 
 /*********VARIABILI **************/
 :root {
 
@@ -90,8 +89,8 @@ nav input[type="search"]:focus {
     width: 15rem;
     aspect-ratio: initial;
     background-size: 1.5rem;
-    background-position: right;
-}
+    background-position: right;}
+    
 
 
 /************** JUMBOTRONE ******************/
@@ -116,4 +115,8 @@ nav input[type="search"]:focus {
 
 .language-globe{
     width: 1.2rem;
+}
+
+.footer-ps-logo{
+    width: 15%;
 }

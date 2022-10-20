@@ -22,8 +22,21 @@
     }
 }
 /***** LG - large < 992px ****************************/
+
 @media screen and (min-width: 992px) {
     *{
         border-color: green;
     }
+    
+}
+
+
+
+/***** XL - large < 992px ****************************/
+
+@media screen and (min-width: 1200px) {
+    *{
+        border-color: rgb(255, 222, 32);
+    }
+
 }
