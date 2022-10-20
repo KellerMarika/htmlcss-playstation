@@ -1,7 +1,9 @@
-* {
-    border: 1px solid rgb(214, 138, 138); 
-}
 
+/*********STUDIO ****************/
+* {
+  /*   border: 1px solid rgb(214, 138, 138); */
+}
+/*********VARIABILI **************/
 :root {
 
     --_primary: #00439c;
@@ -14,11 +16,15 @@
     --_tertiary-light: #d9dadc;
 }
 
+/*********GENERALI ****************/
+a{text-decoration: none;}
+
+/*********UTILITIES***************/
 .my_txt_primary {
     color: var(--_primary);
 }
 
-.my_txt_light{
+.my_txt_light {
     color: white;
 }
 
@@ -50,8 +56,18 @@
     background-color: var(--_tertiary-light);
 }
 
+/* ------------------------------------------------- */
+
+.bunner_card.my_card {
+    padding-top: 12rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
 /************** NAV-LIGHT ******************/
-.dark-nav-logo{
+.dark-nav-logo {
     height: 1.5rem;
 }
 
@@ -59,28 +75,45 @@ nav input[type="search"] {
     background-image: url(../img/lens.svg);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 80%;
+    background-size: 1.5rem;
     width: 2rem;
-    aspect-ratio: 1/1;
     transition: width 0.5s;
     border: none;
-    
-    
+
+
 }
 
-nav input[type="search"]:focus{
+nav input[type="search"]:focus {
     width: 15rem;
     aspect-ratio: initial;
-    background-size: 10%;
-    background-position: right;}
+    background-size: 1.5rem;
+    background-position: right;
+}
 
 
 /************** JUMBOTRONE ******************/
-/*     #jumbotrone{
-        background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
-    }
+
+#jumbotrone {
+    background-image: url(../img/jumbo-bg.png);
+}
 
 
-    #jumbotrone{
-        BA
-    } */
+.jumbo-bunner{
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* ________________________________________sistemare */
+}
+
+.bunner_card.my_card {
+    padding-top: 12rem;
+    padding-bottom: 2rem;
+}
+
+
+/************** JUMBOTRONE ******************/
+
+#it-takes-two{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
