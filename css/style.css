@@ -12,12 +12,15 @@
     --_secondary: #1f1f1f;
     --_secondary-dark: #000000;
 
-    --_tertiary: #ffffff71;
-    --_tertiary-light: #d9dadc;
+    --_tertiary: #bebcbb;
+    --_tertiary-light: rgba(255, 255, 255, 0.375);
 }
 
 /*********GENERALI ****************/
-a{text-decoration: none;}
+a{
+    text-decoration: none;
+    color: white;
+}
 
 /*********UTILITIES***************/
 .my_txt_primary {
@@ -58,11 +61,11 @@ a{text-decoration: none;}
 
 /* ------------------------------------------------- */
 
-.bunner_card.my_card {
-    padding-top: 12rem;
-    padding-bottom: 2rem;
+.jumbo-bunner{
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
-
 
 
 
@@ -97,23 +100,20 @@ nav input[type="search"]:focus {
     background-image: url(../img/jumbo-bg.png);
 }
 
-
-.jumbo-bunner{
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* ________________________________________sistemare */
-}
-
-.bunner_card.my_card {
+#jumbotrone .my_card {
     padding-top: 12rem;
     padding-bottom: 2rem;
 }
 
 
-/************** JUMBOTRONE ******************/
+/******** IT TAKES TWO BUNNER **************/
 
 #it-takes-two{
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+/*********** FOOTER ************************/
+
+.language-globe{
+    width: 1.2rem;
 }
