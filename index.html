@@ -28,84 +28,97 @@
 </head>
 
 <body>
-   
+
 
     <header>
-        <!-- container fluid -->
+
+        <!--::::::::::: NAV ::::::::::::::::::::::::::::-->
         <nav>
+            <!-- DARK NAV ---------------------->
+            <div id="dark-nav" class="my_bg_secondary-dark text-end py-1">
+                <img src="img/sony_logo.svg" alt="sony logo" class="dark-nav-logo img-fluid ">
+            </div>
+
+
+            <!-- LIGHT NAV ---------------------->
+            <!-- position stiki top-height dark-navbar -->
             <div id="nav-container" class="container-fluid">
-
-                <!-- DARK NAV ---------------------->
-                <div id="dark-nav">
-                    <img src="" alt="" class="img-fluid text-end">
-                </div>
-
-                <!-- LIGHT NAV ---------------------->
-                <!-- position stiki top-height dark-navbar -->
-                <div id="light-nav" class="d-flex">
+                <div id="light-nav" class="d-flex navbar align-items-baseline">
                     <!-- sempre visibile -->
-                    <div id="logo-nav-sx">
-                        <img src="" alt="" class="img-fluid">
+                    <div id="logo-nav-sx" class="">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/play_logo.svg" alt="" class="img-fluid w-100">
+                        </a>
+
                     </div>
 
                     <!-- hamburder-menu  lg-collapsep-->
                     <div id="xs-nav-dx" class="ms-auto d-lg-none">
-                        <button>
+
+                        <button class="btn navbar-toggler" type="button">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
 
                     <!-- def - collapse  lg-extended   dropdowun bonus -->
-                    <div id="lg-nav-dx" class="ms-auto d-none d-lg-flex">
-                        <div id="dropdown-nav">
+
+                    <!-- ms-auto -->
+                    <div id="lg-nav-dx" class="d-none d-lg-flex flex-grow-1">
+                        <div id="dropdown-nav" class="my_txt_dark">
                             <ul class="d-flex">
-                                <li>
-                                    <a href="">link1</a>
+                                <li class="list-group-item">
+                                    <a class="nav-link text-capitalize fw-bold my_txt_secondary-dark d-inline-block p-2"
+                                        href="#">giochi</a>
                                 </li>
-                                <li>
-                                    <a href="">link1</a>
+                                <li class="list-group-item">
+                                    <a class="nav-link text-capitalize fw-bold my_txt_secondary-dark d-inline-block p-2"
+                                        href="#">hardware</a>
                                 </li>
-                                <li>
-                                    <a href="">link1</a>
+                                <li class="list-group-item">
+                                    <a class="nav-link text-capitalize fw-bold my_txt_secondary-dark d-inline-block p-2"
+                                        href="#">servizi</a>
                                 </li>
-                                <li>
-                                    <a href="">link1</a>
+                                <li class="list-group-item">
+                                    <a class="nav-link text-capitalize fw-bold my_txt_secondary-dark d-inline-block p-2"
+                                        href="#">novità</a>
                                 </li>
-                                <li>
-                                    <a href="">link1</a>
+                                <li class="list-group-item">
+                                    <a class="nav-link text-capitalize fw-bold my_txt_secondary-dark d-inline-block p-2"
+                                        href="#">fai acquisti</a>
                                 </li>
-                                <li>
-                                    <a href="">link1</a>
+                                <li class="list-group-item">
+                                    <a class="nav-link text-capitalize fw-bold my_txt_secondary-dark d-inline-block p-2"
+                                        href="#">supporto</a>
                                 </li>
                             </ul>
                         </div>
 
 
-                        <div id="user-nav">
+                        <div id="user-nav" class="ms-auto">
                             <ul class="d-flex">
-                                <li>
-                                    <a href="">link1</a>
+                                <li class="list-group-item">
+                                    <a class="nav-link fw-bold my_txt_secondary-dark d-inline-block p-2"
+                                        href="#">MyPlayStation</a>
                                 </li>
-                                <li>
-                                    <button></button>
+                                <li class="list-group-item">
+                                    <button class="btn btn-dark rounded-4 py-2 px-3">accedi</button>
                                 </li>
-                                <li>
-                                    <!-- img -->
-                                    <input type="search">
+                                <li class="list-group-item">
+                                    <input type="search" class="d-inline-block mb-2 py-2">
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+            </div>
         </nav>
 
 
         <!-- JUMBOTRONE -------BUNNER1--------------->
 
         <!-- background-img -->
-
-
         <!-- la struttura dovrà essere riadattata  -->
-        <article id="jumbotrone" class="jumbo-bunner">
+        <article id="jumbotrone" class="jumbo-bunner my_txt_light">
 
             <div class="container">
                 <div class="row">
@@ -113,10 +126,10 @@
                         <div class="my_card">
 
                             <!-- card-image? -->
-                            <img src="" alt="" class="img-fluid">
+                            <img src="IMG/returnal-hero-banner-logo.png" alt="" class="img-fluid w-75">
                             <div class="card-body">
-                                <h2 class="title">t</h2>
-                                <p class="text">text</p>
+                                <h1 class="title">Rompi il cerchio</h1>
+                                <p class="text">rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo esplosivo thriller fantascientifico, disponibile in esclusiva su PS5</p>
                                 <button class="btn btn-danger rounded-5">Acquista ora</button>
                             </div>
                         </div>
@@ -160,9 +173,6 @@
                     </div>
                 </div>
             </section>
-
-
-
 
             <!-- PS5---------------------->
 
@@ -220,17 +230,14 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
             </section>
 
             <!-- BUNNER1 ---------------------->
 
-            <article class="jumbo-bunner">
+            <article class="jumbo-bunner  my_txt_light ">
 
-                <div class="container">
+                <div class="container ">
                     <div class="row">
                         <div class="col col-lg-4">
                             <div class="my_card">
@@ -252,7 +259,7 @@
             </article>
 
             <!-- NEW ---------------------->
-            <section id="new">
+            <section id="new" class=" my_txt_light">
 
                 <div class="container">
                     <h3 class="title"> N</h3>
@@ -282,7 +289,7 @@
                             <img src="" alt="" class="card-img rounded-3">
                         </div>
                     </div>
-     
+
                     <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6">
                         <div class="col">
                             <img src="" alt="" class="card-img">
@@ -312,9 +319,6 @@
                 </div>
             </section>
 
-
-
-
             <!-- PS4  ---------------------->
 
             <section id="PS4">
@@ -322,7 +326,7 @@
                     <h2 class="title">t</h2>
                     <p class="subtitle">text</p>
 
-                    <div class="prow-cols-1 row-cols-md-3 text-start">
+                    <div class="row row-cols-1 row-cols-md-3 text-start">
 
                         <div class="col">
                             <div class="my_card">
@@ -378,7 +382,7 @@
 
             <!-- DISCOUNT --3-------------------->
 
-            <section id="PS4">
+            <section id="discount">
                 <div class="container text-center">
                     <h2 class="title">t</h2>
                     <p class="subtitle">text</p>
@@ -397,12 +401,14 @@
                         <div class="col">
                             <img src="" alt="" class="img-fluid">
                         </div>
+
+
                     </div>
                 </div>
             </section>
 
             <!-- BUNNER2 half ---------------------- -->
-            <article class="bunner_a">
+            <article class="bunner_a  my_txt_light">
                 <div class="container">
                     <div class="row">
                         <div class="col col-lg-6">
@@ -452,7 +458,7 @@
 
             <!-- FOOTER -->
 
-            <footer>
+            <footer class="my_txt_light">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-6">
@@ -465,19 +471,19 @@
                                 <div class="col">
                                     <ul>
                                         <li>
-                                            <a href="">link</a>
+                                            <a href="#">link</a>
                                         </li>
                                         <li>
-                                            <a href="">link</a>
+                                            <a href="#">link</a>
                                         </li>
                                         <li>
-                                            <a href="">link</a>
+                                            <a href="#">link</a>
                                         </li>
                                         <li>
-                                            <a href="">link</a>
+                                            <a href="#">link</a>
                                         </li>
                                         <li>
-                                            <a href="">link</a>
+                                            <a href="#">link</a>
                                         </li>
                                     </ul>
                                 </div>

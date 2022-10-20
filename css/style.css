@@ -1,3 +1,86 @@
-*{
-    border:1px solid rgb(214, 138, 138);
+* {
+    border: 1px solid rgb(214, 138, 138); 
 }
+
+:root {
+
+    --_primary: #00439c;
+    --_primary-dark: #161c3b;
+
+    --_secondary: #1f1f1f;
+    --_secondary-dark: #000000;
+
+    --_tertiary: #ffffff71;
+    --_tertiary-light: #d9dadc;
+}
+
+.my_txt_primary {
+    color: var(--_primary);
+}
+
+.my_txt_light{
+    color: white;
+}
+
+.my_txt_dark {
+    color: var(--_secondary-dark);
+}
+
+.my_bg_primary {
+    background-color: var(--_primary);
+}
+
+.my_bg_primary-dark {
+    background-color: var(--_primary-dark);
+}
+
+.my_bg_secondary {
+    background-color: var(--_secondary);
+}
+
+.my_bg_secondary-dark {
+    background-color: var(--_secondary-dark);
+}
+
+.my_bg_tertiary {
+    background-color: var(--_tertiary);
+}
+
+.my_bg_tertiary-light {
+    background-color: var(--_tertiary-light);
+}
+
+/************** NAV-LIGHT ******************/
+.dark-nav-logo{
+    height: 1.5rem;
+}
+
+nav input[type="search"] {
+    background-image: url(../img/lens.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80%;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    transition: width 0.5s;
+    border: none;
+    
+    
+}
+
+nav input[type="search"]:focus{
+    width: 15rem;
+    aspect-ratio: initial;
+    background-size: 10%;
+    background-position: right;}
+
+
+/************** JUMBOTRONE ******************/
+/*     #jumbotrone{
+        background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
+    }
+
+
+    #jumbotrone{
+        BA
+    } */
