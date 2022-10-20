@@ -86,11 +86,10 @@ nav input[type="search"] {
 }
 
 nav input[type="search"]:focus {
-    width: 15rem;
+    width: 8rem;
     aspect-ratio: initial;
     background-size: 1.5rem;
     background-position: right;}
-    
 
 
 /************** JUMBOTRONE ******************/
@@ -120,3 +119,6 @@ nav input[type="search"]:focus {
 .footer-ps-logo{
     width: 15%;
 }
+
+
+

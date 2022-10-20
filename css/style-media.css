@@ -39,4 +39,8 @@
         border-color: rgb(255, 222, 32);
     }
 
+    /************** NAV-LIGHT ******************/
+ 
+    nav input[type="search"]:focus {
+        width: 20rem;
 }
