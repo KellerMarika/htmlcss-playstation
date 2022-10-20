@@ -33,17 +33,17 @@
     <header>
 
         <!--::::::::::: NAV ::::::::::::::::::::::::::::-->
-        <nav>
-            <!-- DARK NAV ---------------------->
-            <div id="dark-nav" class="my_bg_secondary-dark text-end py-1">
-                <img src="img/sony_logo.svg" alt="sony logo" class="dark-nav-logo img-fluid ">
-            </div>
 
+        <!-- DARK NAV ---------------------->
+        <div id="dark-nav" class="my_bg_secondary-dark text-end py-1">
+            <img src="img/sony_logo.svg" alt="sony logo" class="dark-nav-logo img-fluid ">
+        </div>
 
+        <nav class="position-sticky top-0">
             <!-- LIGHT NAV ---------------------->
             <!-- position stiki top-height dark-navbar -->
-            <div id="nav-container" class="container-fluid">
-                <div id="light-nav" class="d-flex navbar align-items-baseline p-0 ">
+            <div id="nav-container" class="container-fluid bg-light">
+                <div id="light-nav" class="d-flex navbar align-items-baseline p-0  position-relative">
                     <!-- sempre visibile -->
                     <div id="logo-nav-sx" class="">
                         <a class="navbar-brand" href="#">
@@ -65,30 +65,462 @@
                     <!-- ms-auto -->
                     <div id="lg-nav-dx" class="d-none d-lg-flex flex-grow-1">
                         <div id="dropdown-nav" class="my_txt_dark">
-                            <ul class="d-flex">
-                                <li class="list-group-item">
-                                    <a class="nav-link text-capitalize fw-bold my_txt_secondary-dark d-inline-block p-2"
-                                        href="#">giochi</a>
+                            <ul class="list-unstyled">
+                                <!-- li che contiene ul -->
+                                <li id="game-dropdown" class="d-inline-block">
+                                    <a class="text-capitalize fw-bold my_txt_dark d-inline-block p-3"
+                                        href="#">giochi</a>                                    
+
+                                    <div id="game-drop-card"
+                                        class="drop bg-light row justify-content-center start-0 end-0">
+
+                                        <div id="drop-card-container" class="col-8">
+                                            <ul class="text-center list-unstyled row row-cols-5 ">
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/ps5.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS5</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/ps4.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS4</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/psvr.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS
+                                                            VR</a>
+                                                    </div>
+                                                </li>
+
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/plus.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS
+                                                            Plus</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/store.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">Compra
+                                                            Giochi</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div id="game-drop-list" class=" drop-li text-center border-top">
+                                            <ul class="text-center list-unstyled d-flex justify-content-around py-4">
+
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">indie</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4" href="#">titoli
+                                                        per
+                                                        PS4
+                                                        su PS5</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4" href="#">Free
+                                                        to
+                                                        Play</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">PlayStation
+                                                        su
+                                                        PC</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">Promozioni
+                                                        e offerte</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
                                 </li>
-                                <li class="list-group-item">
-                                    <a class="nav-link text-capitalize fw-bold my_txt_secondary-dark d-inline-block p-2"
-                                        href="#">hardware</a>
+                                <li id="game-dropdown" class="d-inline-block">
+                                    <a class="text-capitalize fw-bold my_txt_dark d-inline-block p-3"
+                                        href="#">giochi</a>                                    
+
+                                    <div id="game-drop-card"
+                                        class="drop bg-light row justify-content-center start-0 end-0">
+
+                                        <div id="drop-card-container" class="col-8">
+                                            <ul class="text-center list-unstyled row row-cols-5 ">
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/ps5.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS5</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/ps4.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS4</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/psvr.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS
+                                                            VR</a>
+                                                    </div>
+                                                </li>
+
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/plus.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS
+                                                            Plus</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/store.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">Compra
+                                                            Giochi</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div id="game-drop-list" class=" drop-li text-center border-top">
+                                            <ul class="text-center list-unstyled d-flex justify-content-around py-4">
+
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">indie</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4" href="#">titoli
+                                                        per
+                                                        PS4
+                                                        su PS5</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4" href="#">Free
+                                                        to
+                                                        Play</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">PlayStation
+                                                        su
+                                                        PC</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">Promozioni
+                                                        e offerte</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
                                 </li>
-                                <li class="list-group-item">
-                                    <a class="nav-link text-capitalize fw-bold my_txt_secondary-dark d-inline-block p-2"
-                                        href="#">servizi</a>
+                                <li id="game-dropdown" class="d-inline-block">
+                                    <a class="text-capitalize fw-bold my_txt_dark d-inline-block p-3"
+                                        href="#">giochi</a>                                    
+
+                                    <div id="game-drop-card"
+                                        class="drop bg-light row justify-content-center start-0 end-0">
+
+                                        <div id="drop-card-container" class="col-8">
+                                            <ul class="text-center list-unstyled row row-cols-5 ">
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/ps5.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS5</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/ps4.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS4</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/psvr.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS
+                                                            VR</a>
+                                                    </div>
+                                                </li>
+
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/plus.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS
+                                                            Plus</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/store.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">Compra
+                                                            Giochi</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div id="game-drop-list" class=" drop-li text-center border-top">
+                                            <ul class="text-center list-unstyled d-flex justify-content-around py-4">
+
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">indie</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4" href="#">titoli
+                                                        per
+                                                        PS4
+                                                        su PS5</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4" href="#">Free
+                                                        to
+                                                        Play</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">PlayStation
+                                                        su
+                                                        PC</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">Promozioni
+                                                        e offerte</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
                                 </li>
-                                <li class="list-group-item">
-                                    <a class="nav-link text-capitalize fw-bold my_txt_secondary-dark d-inline-block p-2"
-                                        href="#">novità</a>
+                                <li id="game-dropdown" class="d-inline-block">
+                                    <a class="text-capitalize fw-bold my_txt_dark d-inline-block p-3"
+                                        href="#">giochi</a>                                    
+
+                                    <div id="game-drop-card"
+                                        class="drop bg-light row justify-content-center start-0 end-0">
+
+                                        <div id="drop-card-container" class="col-8">
+                                            <ul class="text-center list-unstyled row row-cols-5 ">
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/ps5.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS5</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/ps4.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS4</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/psvr.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS
+                                                            VR</a>
+                                                    </div>
+                                                </li>
+
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/plus.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS
+                                                            Plus</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/store.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">Compra
+                                                            Giochi</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div id="game-drop-list" class=" drop-li text-center border-top">
+                                            <ul class="text-center list-unstyled d-flex justify-content-around py-4">
+
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">indie</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4" href="#">titoli
+                                                        per
+                                                        PS4
+                                                        su PS5</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4" href="#">Free
+                                                        to
+                                                        Play</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">PlayStation
+                                                        su
+                                                        PC</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">Promozioni
+                                                        e offerte</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
                                 </li>
-                                <li class="list-group-item">
-                                    <a class="nav-link text-capitalize fw-bold my_txt_secondary-dark d-inline-block p-2"
-                                        href="#">fai acquisti</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a class="nav-link text-capitalize fw-bold my_txt_secondary-dark d-inline-block p-2"
-                                        href="#">supporto</a>
+                                <li id="game-dropdown" class="d-inline-block">
+                                    <a class="text-capitalize fw-bold my_txt_dark d-inline-block p-3"
+                                        href="#">giochi</a>                                    
+
+                                    <div id="game-drop-card"
+                                        class="drop bg-light row justify-content-center start-0 end-0">
+
+                                        <div id="drop-card-container" class="col-8">
+                                            <ul class="text-center list-unstyled row row-cols-5 ">
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/ps5.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS5</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/ps4.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS4</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/psvr.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS
+                                                            VR</a>
+                                                    </div>
+                                                </li>
+
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/plus.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">PS
+                                                            Plus</a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="col">
+                                                    <div class="my_nav_card ratio-16x9 m-auto py-4 mb-4 rounded-2">
+                                                        <img src="img/img-bonus/store.png" alt="ps5"
+                                                            class="img-fluid d-block m-auto">
+                                                        <a class=" text-capitalize fw-bold my_txt_dark" href="#">Compra
+                                                            Giochi</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div id="game-drop-list" class=" drop-li text-center border-top">
+                                            <ul class="text-center list-unstyled d-flex justify-content-around py-4">
+
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">indie</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4" href="#">titoli
+                                                        per
+                                                        PS4
+                                                        su PS5</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4" href="#">Free
+                                                        to
+                                                        Play</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">PlayStation
+                                                        su
+                                                        PC</a>
+                                                </li>
+                                                <li class="col flex-grow-1">
+                                                    <a class=" text-capitalize fw-bold my_txt_dark px-4"
+                                                        href="#">Promozioni
+                                                        e offerte</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
                                 </li>
                             </ul>
                         </div>
@@ -96,14 +528,13 @@
 
                         <div id="user-nav" class="ms-auto">
                             <ul class="d-flex">
-                                <li class="list-group-item">
-                                    <a class="nav-link fw-bold my_txt_secondary-dark d-inline-block p-2"
-                                        href="#">MyPlayStation</a>
+                                <li class="">
+                                    <a class="fw-bold my_txt_dark d-inline-block p-2" href="#">MyPlayStation</a>
                                 </li>
-                                <li class="list-group-item">
+                                <li class="">
                                     <button class="btn btn-dark rounded-4 py-2 px-3">accedi</button>
                                 </li>
-                                <li class="list-group-item">
+                                <li class="">
                                     <input type="search" class="d-inline-block mb-2 py-2">
                                 </li>
                             </ul>
@@ -247,7 +678,7 @@
                             <div class="my_card">
 
                                 <!-- card-image? -->
-                                <img src="img/it-takes-two-logo.png" alt="it-takes-two" class="img-fluid w-50 pt-5">
+                                <img src="img/it-takes-two-logo.png" alt="it-takes-two" class="img-fluid pt-5">
                                 <div class="card-body">
                                     <h2 class="title">Un'avventura cooperativa selvaggia ti attende</h2>
                                     <p class="text subtitle">Trova un amico e partite insieme per l'avventuuraa più
