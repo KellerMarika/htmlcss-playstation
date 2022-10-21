@@ -1,5 +1,7 @@
 /*********STUDIO ****************/
-* {}
+* {
+    border:1px solid black;
+}
 
 /*********VARIABILI **************/
 :root {
@@ -80,17 +82,24 @@ nav input[type="search"] {
     background-position: right;
     background-size: 1.5rem;
     width: 2rem;
+    height: 1.5rem;
+    vertical-align:baseline;
     transition: width 0.5s;
     border: none;
-
-
 }
 
 nav input[type="search"]:focus {
-    width: 8rem;
+    width: 14.5rem;
     aspect-ratio: initial;
     background-size: 1.5rem;
     background-position: right;
+}
+#user-nav input[type="search"]:focus + ul{
+    display: none;
+}
+
+#user-nav ul{
+    display: flex;
 }
 
 /*........DROPDOWN......................... */
@@ -113,7 +122,7 @@ nav a:hover {
     position: relative;
 }
  */
- .my_dropdown{
+ #dropdown-nav .my_dropdown{
  border-bottom: 1px solid  rgb(201, 201, 201);   
  }
 
@@ -158,12 +167,13 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 55px;
+    top: 60px;
     right: -1rem;;
     left:-1rem;
-    text-align: end;
+    text-align: start;
     background-color: white;
     width: 100vw;
+    padding-top: 1rem;
 
 }
 
@@ -181,6 +191,18 @@ nav a:hover {
 
 #xs-nav-dx:focus+#lg-nav-dx .dropdown a {
     padding: 5px;
+}
+
+#xs-nav-dx:focus+#lg-nav-dx .my_dropdown,
+#xs-nav-dx:focus+#user-nav .my_dropdown{
+    margin-left: 1.2rem;
+}
+
+.my_dropdown a i{
+    display: inline-block;
+    font-size: 1.5rem;
+    padding-right: 0.2rem;
+    color: var(--_tertiary-dark);
 }
 
 /************** JUMBOTRONE ******************/
