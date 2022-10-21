@@ -26,10 +26,13 @@
 
 @media screen and (min-width: 992px) {
     * {
-        border-color: green;
-    }
+        border-color: green;}
 
-}
+
+        #dropdown-nav ul li:hover>.drop {
+            display: flex;
+        }
+    }
 
 
 

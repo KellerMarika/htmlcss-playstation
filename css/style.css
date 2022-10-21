@@ -123,10 +123,6 @@ nav a:hover {
     right: 0; */
 }
 
-#dropdown-nav ul li:hover>.drop {
-    display: flex;
-}
-
 .my_nav_card:hover {
     box-shadow: 1px 2px 10px 2px rgb(201, 201, 201);
 }
