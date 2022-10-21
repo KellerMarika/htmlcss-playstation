@@ -240,6 +240,7 @@ nav a:hover {
 /*******************************************************/
 
 /* è una row, prende la misura dai figli, non serve metterla in d-none, si annulla in automatico coi figli */
+
 #tab-bunner-set {
     position: relative;
 }
@@ -255,15 +256,13 @@ nav a:hover {
 #tabset-container input {
     position:absolute;
     visibility: hidden;
-  
-
 }
 
-#tab1 {
+#tab-bunner-set .bunner-tab:nth-child(2n + 1){
     background-image: url(../img/jumbo-bg.png);
 }
 
-#tab2 {
+#tab-bunner-set .bunner-tab:nth-child(2n){
     background-image: url(../img/crash-bandicoot-4-its-about-time-store-art.jpg);
 }
 
@@ -271,13 +270,6 @@ nav a:hover {
     padding-top: 12rem;
     padding-bottom: 2rem;
 }
-
-/* 
-
-/* questa funziona*/
-/* #tabset-container input:first-of-type:checked ~ #tab-bunner-set section:first-child{
-    display: block;
-} */
 
 #tabset-container input:first-of-type:checked ~ #tab-bunner-set section:first-child,
 #tabset-container input:nth-of-type(2):checked ~#tab-bunner-set section:nth-child(2),
@@ -287,3 +279,6 @@ nav a:hover {
 #tabset-container input:last-of-type:checked ~ #tab-bunner-set section:last-child{
     display: block;
 }
+
+/* adesso voglio dire alla row che le sue prime 5 col devono avere la misura che dico io in base al vw...  */
+tabset-container
