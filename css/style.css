@@ -232,3 +232,32 @@ nav a:hover {
 .footer-ps-logo {
     width: 15%;
 }
+
+/********************************************************/ 
+           /* TABSET JUMBOTRONE YO! */
+/*******************************************************/
+
+#tab-bunner-set .bunner-tab{
+/* display: block; */
+}
+
+#tabset-container input{
+
+
+}
+
+#tab1{
+    background-image: url(../img/jumbo-bg.png);
+}
+
+
+#tab-bunner-set .bunner-tab .my_card {
+    padding-top: 12rem;
+    padding-bottom: 2rem;
+}
+
+
+#tabset-container>input:first-of-type:checked~#tab-bunner-set> .bunner-tab:first-child{
+    background-image: url(../img/dualshock-4-listing-thumb.jpg);
+    display: none;
+}
