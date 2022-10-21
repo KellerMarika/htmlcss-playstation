@@ -239,19 +239,25 @@ nav a:hover {
 /* TABSET JUMBOTRONE YO! */
 /*******************************************************/
 
-
-#tab-bunner-set{
-    position:relative;
+/* è una row, prende la misura dai figli, non serve metterla in d-none, si annulla in automatico coi figli */
+#tab-bunner-set {
+    position: relative;
 }
+
 #tab-bunner-set .bunner-tab {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
- display: none;
+    display: none;
 }
 
-#tabset-container input {}
+#tabset-container input {
+    position:absolute;
+    visibility: hidden;
+  
+
+}
 
 #tab1 {
     background-image: url(../img/jumbo-bg.png);
@@ -268,14 +274,16 @@ nav a:hover {
 
 /* 
 
-input:checked ~ #tab-bunner-set .bunner-tab{
-}
-#tabset-container input:checked ~ #tab-bunner-set .bunner-tab{ 
-}
-#tabset-container input:first-of-type:checked ~ #tab-bunner-set .bunner-tab{
- 
+/* questa funziona*/
+/* #tabset-container input:first-of-type:checked ~ #tab-bunner-set section:first-child{
+    display: block;
 } */
-#tabset-container input:first-of-type:checked~#tab-bunner-set .bunner-tab:first-child,
-#tabset-container input:nth-last-of-type(2):checked~#tab-bunner-set .bunner-tab:nth-child(2) {
+
+#tabset-container input:first-of-type:checked ~ #tab-bunner-set section:first-child,
+#tabset-container input:nth-of-type(2):checked ~#tab-bunner-set section:nth-child(2),
+#tabset-container input:nth-of-type(3):checked ~#tab-bunner-set section:nth-child(3),
+#tabset-container input:nth-of-type(4):checked ~#tab-bunner-set section:nth-child(4),
+#tabset-container input:nth-of-type(5):checked ~#tab-bunner-set section:nth-child(5),
+#tabset-container input:last-of-type:checked ~ #tab-bunner-set section:last-child{
     display: block;
 }
