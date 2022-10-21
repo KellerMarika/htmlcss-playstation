@@ -1,6 +1,6 @@
 /*********STUDIO ****************/
 * {
-    border: 1px solid black;
+     border: 1px solid black; 
 }
 
 /*********VARIABILI **************/
@@ -108,7 +108,7 @@ nav input[type="search"]:focus {
 nav{
     position:sticky;
     top: 0;  
-} */
+} 
 
 nav a:hover {
     color: var(--_primary-light);
@@ -123,6 +123,12 @@ nav a:hover {
     position: relative;
 }
  */
+
+ nav{
+    z-index: 20000;
+
+ }
+
 #dropdown-nav .my_dropdown {
     border-bottom: 1px solid rgb(201, 201, 201);
 }
@@ -157,6 +163,7 @@ nav a:hover {
 
 #lg-nav-dx {
     display: none;
+
 }
 
 #xs-nav-dx:focus+#lg-nav-dx>#dropdown-nav>ul {
@@ -167,7 +174,7 @@ nav a:hover {
 #xs-nav-dx:focus+#lg-nav-dx {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     top: 60px;
     right: -1rem;
     ;
@@ -254,15 +261,15 @@ nav a:hover {
 }
 
 #tabset-container input {
-    position:absolute;
+    position: absolute;
     visibility: hidden;
 }
 
-#tab-bunner-set .bunner-tab:nth-child(2n + 1){
+#tab-bunner-set .bunner-tab:nth-child(2n + 1) {
     background-image: url(../img/jumbo-bg.png);
 }
 
-#tab-bunner-set .bunner-tab:nth-child(2n){
+#tab-bunner-set .bunner-tab:nth-child(2n) {
     background-image: url(../img/crash-bandicoot-4-its-about-time-store-art.jpg);
 }
 
@@ -271,12 +278,12 @@ nav a:hover {
     padding-bottom: 2rem;
 }
 
-#tabset-container input:first-of-type:checked ~ #tab-bunner-set section:first-child,
-#tabset-container input:nth-of-type(2):checked ~#tab-bunner-set section:nth-child(2),
-#tabset-container input:nth-of-type(3):checked ~#tab-bunner-set section:nth-child(3),
-#tabset-container input:nth-of-type(4):checked ~#tab-bunner-set section:nth-child(4),
-#tabset-container input:nth-of-type(5):checked ~#tab-bunner-set section:nth-child(5),
-#tabset-container input:last-of-type:checked ~ #tab-bunner-set section:last-child{
+#tabset-container input:first-of-type:checked~#tab-bunner-set section:first-child,
+#tabset-container input:nth-of-type(2):checked~#tab-bunner-set section:nth-child(2),
+#tabset-container input:nth-of-type(3):checked~#tab-bunner-set section:nth-child(3),
+#tabset-container input:nth-of-type(4):checked~#tab-bunner-set section:nth-child(4),
+#tabset-container input:nth-of-type(5):checked~#tab-bunner-set section:nth-child(5),
+#tabset-container input:last-of-type:checked~#tab-bunner-set section:last-child {
     display: block;
 }
 
