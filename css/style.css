@@ -1,6 +1,6 @@
 /*********STUDIO ****************/
 * {
-     border: 1px solid black; 
+    border: 1px solid black;
 }
 
 /*********VARIABILI **************/
@@ -71,6 +71,7 @@ a {
 
 
 /************** NAV-LIGHT ******************/
+
 .dark-nav-logo {
     height: 1.5rem;
 }
@@ -124,10 +125,6 @@ nav a:hover {
 }
  */
 
- nav{
-    z-index: 20000;
-
- }
 
 #dropdown-nav .my_dropdown {
     border-bottom: 1px solid rgb(201, 201, 201);
@@ -248,31 +245,28 @@ nav a:hover {
 
 /* è una row, prende la misura dai figli, non serve metterla in d-none, si annulla in automatico coi figli */
 
-#tab-bunner-set {
-    position: relative;
-}
+/* non serve nemmeno metterla in relative per i figli, che essendo col 12 si prendono tutto lo spazio disponibile */
 
-#tab-bunner-set .bunner-tab {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: none;
-}
 
 #tabset-container input {
     position: absolute;
     visibility: hidden;
 }
 
+#tab-bunner-set .bunner-tab {
+    display: none;
+}
+
 #tab-bunner-set .bunner-tab:nth-child(2n + 1) {
     background-image: url(../img/jumbo-bg.png);
+
 }
 
 #tab-bunner-set .bunner-tab:nth-child(2n) {
     background-image: url(../img/crash-bandicoot-4-its-about-time-store-art.jpg);
 }
 
+/* ___________________________________________________ */
 #tab-bunner-set .bunner-tab .my_card {
     padding-top: 12rem;
     padding-bottom: 2rem;
@@ -288,4 +282,7 @@ nav a:hover {
 }
 
 /* adesso voglio dire alla row che le sue prime 5 col devono avere la misura che dico io in base al vw...  */
-tabset-container
+
+#tabset-container .col-lg-2 {
+    max-width: 220px;
+}
