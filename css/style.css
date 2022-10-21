@@ -1,6 +1,5 @@
 /*********STUDIO ****************/
-* {
-}
+* {}
 
 /*********VARIABILI **************/
 :root {
@@ -117,10 +116,10 @@ nav a:hover {
 
 
 #dropdown-nav .drop {
-     display: none;
+    display: none;
     position: absolute;
     top: 55px;
-/*     left: 0;
+    /*     left: 0;
     right: 0; */
 }
 
@@ -128,23 +127,57 @@ nav a:hover {
     display: flex;
 }
 
-.my_nav_card:hover{
+.my_nav_card:hover {
     box-shadow: 1px 2px 10px 2px rgb(201, 201, 201);
 }
-.drop-li{
-    box-shadow: 0 2px 3px 1px rgb(201, 201, 201) ;
+
+.drop-li {
+    box-shadow: 0 2px 3px 1px rgb(201, 201, 201);
 }
 
-.drop-li li::before{
+.drop-li li::before {
     content: "";
     display: inline-block;
     border-radius: 50%;
     background-color: var(--_primary-light);
     aspect-ratio: 1/1;
     width: 10px;
-}    
+}
 
 
+/*........HAMBURGER-MENU-DROPDOWN.................... */
+
+#lg-nav-dx {
+    display: none;
+}
+
+#xs-nav-dx:focus+#lg-nav-dx {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    text-align: end;
+    background-color: white;
+    width: 100vw;
+
+}
+
+#xs-nav-dx:focus+#lg-nav-dx>#user-nav ul {
+    flex-direction: column;
+}
+
+#xs-nav-dx:focus+#lg-nav-dx>#user-nav .drop {
+    display: none;
+}
+
+#xs-nav-dx:focus+#lg-nav-dx .dropdown {
+    display: block;
+}
+
+#xs-nav-dx:focus+#lg-nav-dx .dropdown a {
+    padding: 5px;
+}
 
 /************** JUMBOTRONE ******************/
 

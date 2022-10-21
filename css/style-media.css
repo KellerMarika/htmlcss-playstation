@@ -9,7 +9,7 @@
 
 /***** SM - small < 576px ***************************/
 @media screen and (min-width: 576px) {
-    *{
+    * {
         border-color: blue;
     }
 }
@@ -17,17 +17,18 @@
 /***** MD - medium < 768px **************************/
 @media screen and (min-width: 768px) {
 
-    *{
+    * {
         border-color: fuchsia;
     }
 }
+
 /***** LG - large < 992px ****************************/
 
 @media screen and (min-width: 992px) {
-    *{
+    * {
         border-color: green;
     }
-    
+
 }
 
 
@@ -35,12 +36,12 @@
 /***** XL - large < 992px ****************************/
 
 @media screen and (min-width: 1200px) {
-    *{
+    * {
         border-color: rgb(255, 222, 32);
     }
 
     /************** NAV-LIGHT ******************/
- 
+
     nav input[type="search"]:focus {
         width: 20rem;
-}
+    }
