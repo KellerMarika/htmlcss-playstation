@@ -1,0 +1,62 @@
+/* ***************************************** 
+            RESPONSIVE- MOBILE-FIRST 
+******************************************* */
+
+/* XS extra small < 576px - default css*/
+
+
+
+
+/***** SM - small < 576px ***************************/
+@media screen and (min-width: 576px) {
+    * {
+        border-color: blue;
+    }
+}
+
+/***** MD - medium < 768px **************************/
+@media screen and (min-width: 768px) {
+
+    * {
+        border-color: fuchsia;
+    }
+}
+
+/***** LG - large < 992px ****************************/
+
+@media screen and (min-width: 992px) {
+    * {
+        border-color: green;
+    }
+
+    /************** NAV-LIGHT ******************/
+
+    #dropdown-nav .my_dropdown {
+        border: none;
+    }
+
+    #dropdown-nav ul li:hover>.drop {
+        display: flex;
+    }
+
+    .my_dropdown a i {
+        display: none;
+    }
+
+}
+
+
+
+/***** XL - large < 992px ****************************/
+
+@media screen and (min-width: 1200px) {
+    * {
+        border-color: rgb(255, 222, 32);
+    }
+
+
+    /************** NAV-LIGHT ******************/
+
+    #user-nav input[type="search"]:focus+ul {
+        display: flex;
+    }
