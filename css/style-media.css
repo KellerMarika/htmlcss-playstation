@@ -60,3 +60,11 @@
     #user-nav input[type="search"]:focus+ul {
         display: flex;
     }
+
+
+   /************** TABS ******************/
+
+    #tabset-container .col-lg-2 {
+        max-width: 220px;
+    }
+}

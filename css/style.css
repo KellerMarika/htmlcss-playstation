@@ -1,7 +1,7 @@
 /*********STUDIO ****************/
-* {
+/* * {
     border: 1px solid black;
-}
+} */
 
 /*********VARIABILI **************/
 :root {
@@ -211,6 +211,38 @@ nav a:hover {
     color: var(--_tertiary-dark);
 }
 
+/* hover */
+
+.down,
+.down-hover {
+    width: 0.6rem;
+    margin: 8px 5px;
+}
+
+
+.down-hover {
+    visibility: hidden;
+transition: all 0.2s;
+}
+
+.my_dropdown a:hover>span .down {
+    visibility: hidden;
+}
+
+.my_dropdown a:focus>span .down {
+    visibility: hidden;
+}
+
+.my_dropdown a:hover>span .down-hover {
+    visibility: visible;
+    transform: rotate(180deg);
+}
+
+.my_dropdown a:focus>span .down-hover {
+    visibility: visible;
+    transform: rotate(180deg);
+}
+
 /************** JUMBOTRONE ******************/
 
 #jumbotrone {
@@ -281,8 +313,8 @@ nav a:hover {
     display: block;
 }
 
-/* adesso voglio dire alla row che le sue prime 5 col devono avere la misura che dico io in base al vw...  */
-
-#tabset-container .col-lg-2 {
-    max-width: 220px;
+/* hover */
+#tabset-container label img:hover {
+    border: 5px solid var(--_primary-light);
 }
+
